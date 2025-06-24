@@ -1,17 +1,66 @@
-# AI-Agent-Meeting-Scheduler
+# 🤖 AI-Agent-Meeting-Scheduler
 
-This workflow enables seamless meeting scheduling using natural language commands through Telegram. Whether a user sends a text or voice message, the system:
+This **n8n** workflow enables seamless meeting scheduling using natural language commands through **Telegram**. It supports both **text** and **voice messages**, automating the entire process from interpretation to calendar creation and email confirmation.
 
-Detects message type (text or voice).
+---
 
-Transcribes voice messages using OpenAI Whisper.
+## 📌 Key Features
 
-Uses OpenAI GPT to extract meeting details: participant, date, time, duration, and topic.
+- **Message Type Detection**
+  - Automatically distinguishes between text and voice inputs.
 
-Automatically creates a calendar event in Google Calendar.
+- **Voice-to-Text Transcription**
+  - Transcribes voice messages using **OpenAI Whisper**.
 
-Sends a confirmation email to the meeting participant.
+- **Intelligent NLP Parsing**
+  - Extracts meeting details such as:
+    - 📅 Date
+    - 🕒 Time
+    - ⏳ Duration
+    - 👤 Participant
+    - 💬 Topic  
+  - Powered by **OpenAI GPT**.
 
-Leverages Google Sheets for contact retrieval and integrates memory for context-aware conversations.
+- **Google Calendar Integration**
+  - Creates events directly in **Google Calendar** based on extracted details.
 
-Built using n8n for low-code orchestration, OpenAI for natural language understanding, and Google APIs for scheduling and communication.
+- **Email Confirmation**
+  - Sends a confirmation email to the meeting participant.
+
+- **Contact Lookup**
+  - Uses **Google Sheets** to retrieve contact information.
+
+- **Context Awareness**
+  - Maintains memory for more natural, multi-turn conversations.
+
+---
+
+## 🛠 Built With
+
+- [n8n](https://n8n.io/) – Low-code workflow automation
+- [OpenAI Whisper](https://platform.openai.com/docs/guides/speech-to-text) – Voice transcription
+- [OpenAI GPT](https://platform.openai.com/docs) – Natural Language Understanding
+- [Google Calendar API](https://developers.google.com/calendar) – Event scheduling
+- [Gmail API](https://developers.google.com/gmail/api) – Email confirmation
+- [Google Sheets API](https://developers.google.com/sheets/api) – Contact retrieval
+
+---
+
+## 📥 Getting Started
+
+1. Import the provided `.json` workflow into your n8n instance.
+2. Connect your:
+   - Telegram Bot
+   - OpenAI API
+   - Google Calendar & Gmail credentials
+   - Google Sheets containing contacts
+3. Deploy and test the workflow.
+
+---
+
+## 📧 Contact
+
+Feel free to contribute or reach out for improvements!
+
+---
+
