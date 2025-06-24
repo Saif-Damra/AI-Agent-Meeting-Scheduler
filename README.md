@@ -44,23 +44,4 @@ This **n8n** workflow enables seamless meeting scheduling using natural language
 - [Gmail API](https://developers.google.com/gmail/api) – Email confirmation
 - [Google Sheets API](https://developers.google.com/sheets/api) – Contact retrieval
 
----
-
-## 📥 Getting Started
-
-1. Import the provided `.json` workflow into your n8n instance.
-2. Connect your:
-   - Telegram Bot
-   - OpenAI API
-   - Google Calendar & Gmail credentials
-   - Google Sheets containing contacts
-3. Deploy and test the workflow.
-
----
-
-## 📧 Contact
-
-Feel free to contribute or reach out for improvements!
-
----
 
